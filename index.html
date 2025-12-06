@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>⏱️Countdown Timer⏱️</h2>
+       
+        <div class="inputs">
+            <input type="number" id="minInput" placeholder="00" min="0">
+            <span class="colon">:</span>
+            <input type="number" id="secInput" placeholder="00" min="0">
+        </div>
+
+        <button id="startBtn">Start Timer</button>
+
+        <div class="circle-container">
+            <svg class="progress-ring" width="160" height="160">
+                <circle class="ring-bg" cx="80" cy="80" r="70"></circle>
+                <circle class="ring-progress" cx="80" cy="80" r="70"></circle>
+            </svg>
+            <h1 id="display" class="center-text">00:00</h1>
+        </div>
+
+        <audio id="alarmSound" src="alarm.mp3" preload="auto"></audio>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
