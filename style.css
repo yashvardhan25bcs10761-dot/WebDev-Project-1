@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #3b024f;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background: #61026f;
+    padding: 25px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 0 35px rgba(0,0,0,0.4);
+}
+
+.inputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    gap: 10px;
+}
+
+.inputs input {
+    width: 80px;
+    padding: 12px;
+    font-size: 20px;
+    border-radius: 10px;
+    background: #2a2a2f;
+    border: 2px solid #333;
+    outline: none;
+    text-align: center;
+    color: white;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    background: #4f46e5;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: 0.25s;
+}
+
+button:hover {
+    background: #4338ca;
+}
+
+
+.circle-container {
+    position: relative;
+    width: 160px;
+    height: 160px;
+    margin: 0 auto;
+}
+
+.progress-ring {
+    transform: rotate(-90deg);
+}
+
+.ring-bg {
+    fill: none;
+    stroke: #333;
+    stroke-width: 12;
+}
+
+.ring-progress {
+    fill: none;
+    stroke: #00d9ff;
+    stroke-width: 12;
+    stroke-linecap: round;
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+    transition: stroke-dashoffset 1s linear;
+}
+
+.center-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 38px;
+}
+
+@media (max-width: 480px) {
+    .inputs input {
+        width: 60px;
+        font-size: 18px;
+    }
+
+    .center-text {
+        font-size: 32px;
+    }
+}
